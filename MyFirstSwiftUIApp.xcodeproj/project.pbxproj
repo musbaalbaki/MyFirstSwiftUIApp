@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F7D6F04725037514008CA5A6 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D6F04625037514008CA5A6 /* Item.swift */; };
+		F7D6F04825037514008CA5A6 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D6F04625037514008CA5A6 /* Item.swift */; };
+		F7D6F04A25037752008CA5A6 /* Items.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7D6F04925037752008CA5A6 /* Items.xcassets */; };
+		F7D6F04B25037752008CA5A6 /* Items.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7D6F04925037752008CA5A6 /* Items.xcassets */; };
+		F7D6F04D2503809F008CA5A6 /* ItemDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D6F04C2503809F008CA5A6 /* ItemDetail.swift */; };
+		F7D6F04E2503809F008CA5A6 /* ItemDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D6F04C2503809F008CA5A6 /* ItemDetail.swift */; };
 		F7F313C22503707500704BA5 /* MyFirstSwiftUIAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F313AF2503707500704BA5 /* MyFirstSwiftUIAppApp.swift */; };
 		F7F313C32503707500704BA5 /* MyFirstSwiftUIAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F313AF2503707500704BA5 /* MyFirstSwiftUIAppApp.swift */; };
 		F7F313C42503707500704BA5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F313B02503707500704BA5 /* ContentView.swift */; };
@@ -16,6 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F7D6F04625037514008CA5A6 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		F7D6F04925037752008CA5A6 /* Items.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Items.xcassets; sourceTree = "<group>"; };
+		F7D6F04C2503809F008CA5A6 /* ItemDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetail.swift; sourceTree = "<group>"; };
 		F7F313AF2503707500704BA5 /* MyFirstSwiftUIAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFirstSwiftUIAppApp.swift; sourceTree = "<group>"; };
 		F7F313B02503707500704BA5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F7F313B12503707500704BA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -59,6 +68,9 @@
 			children = (
 				F7F313AF2503707500704BA5 /* MyFirstSwiftUIAppApp.swift */,
 				F7F313B02503707500704BA5 /* ContentView.swift */,
+				F7D6F04C2503809F008CA5A6 /* ItemDetail.swift */,
+				F7D6F04625037514008CA5A6 /* Item.swift */,
+				F7D6F04925037752008CA5A6 /* Items.xcassets */,
 				F7F313B12503707500704BA5 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -168,6 +180,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7D6F04A25037752008CA5A6 /* Items.xcassets in Resources */,
 				F7F313C62503707500704BA5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -176,6 +189,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7D6F04B25037752008CA5A6 /* Items.xcassets in Resources */,
 				F7F313C72503707500704BA5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -188,6 +202,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7F313C42503707500704BA5 /* ContentView.swift in Sources */,
+				F7D6F04D2503809F008CA5A6 /* ItemDetail.swift in Sources */,
+				F7D6F04725037514008CA5A6 /* Item.swift in Sources */,
 				F7F313C22503707500704BA5 /* MyFirstSwiftUIAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -197,6 +213,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7F313C52503707500704BA5 /* ContentView.swift in Sources */,
+				F7D6F04E2503809F008CA5A6 /* ItemDetail.swift in Sources */,
+				F7D6F04825037514008CA5A6 /* Item.swift in Sources */,
 				F7F313C32503707500704BA5 /* MyFirstSwiftUIAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
