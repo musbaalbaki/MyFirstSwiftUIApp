@@ -23,6 +23,8 @@ struct ContentView: View {
                 }
             }
             .navigationTitle("Mercari" )
+            Text("Select an item")
+                .font(.largeTitle)
         }
     }
 }
