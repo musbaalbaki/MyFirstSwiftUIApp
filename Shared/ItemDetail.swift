@@ -8,12 +8,19 @@
 import SwiftUI
 
 struct ItemDetail: View {
-    var item: Item
+    let item: Item
+    @State private var zoomed = false
     var body: some View {
         Image(item.imageName)
             .resizable()
-            .aspectRatio(contentMode: .fit)
+            .aspectRatio(contentMode: zoomed ? .fill : .fit)
             .navigationTitle(item.title)
+            .onTapGesture {
+                withAnimation{
+                    zoomed.toggle()
+                }
+            }
+            .edgesIgnoringSafeArea(.bottom)
     }
 }
 
