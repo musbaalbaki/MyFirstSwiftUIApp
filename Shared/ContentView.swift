@@ -8,30 +8,66 @@
 import SwiftUI
 
 struct ContentView: View {
-    var items: [Item] = []
+    @ObservedObject var store: ItemStore
     var body: some View {
         NavigationView {
             List {
-                ForEach(items) { item in
+                ForEach(store.items) { item in
                     ItemCell(item: item)
                 }
+                .onMove(perform: moveItems)
+                .onDelete(perform: deleteItems)
                 HStack {
                     Spacer()
-                    Text("\(items.count) items")
+                    Text("\(store.items.count) items")
                         .foregroundColor(.secondary)
                     Spacer()
                 }
             }
-            .navigationTitle("Mercari" )
+            .navigationTitle("Mercari")
+            .toolbar {
+                #if os(iOS)
+                EditButton()
+                #endif
+                Button("Add", action: listItem)
+            }
             Text("Select an item")
                 .font(.largeTitle)
+        }
+    }
+
+    func listItem() {
+        withAnimation {
+            store.items.append(Item(title: "Mouse", likesCount: 5))
+        }
+    }
+
+    func moveItems(from: IndexSet, to: Int) {
+        withAnimation {
+            store.items.move(fromOffsets: from, toOffset: to)
+        }
+    }
+
+    func deleteItems(offsets: IndexSet) {
+        withAnimation {
+            store.items.remove(atOffsets: offsets)
         }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(items: testData)
+        Group {
+            ContentView(store: testStore)
+            ContentView(store: testStore)
+                .preferredColorScheme(.dark)
+                .environment(\.sizeCategory, .extraExtraLarge)
+            ContentView(store: testStore)
+                .preferredColorScheme(.dark)
+                .environment(\.sizeCategory, .extraExtraLarge)
+                .environment(\.layoutDirection, .rightToLeft)
+                .environment(\.locale, Locale(identifier: "ar"))
+        }
     }
 }
 

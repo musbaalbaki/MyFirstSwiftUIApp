@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F79F2B612503F76800E8090D /* ItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79F2B602503F76800E8090D /* ItemStore.swift */; };
+		F79F2B622503F76800E8090D /* ItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79F2B602503F76800E8090D /* ItemStore.swift */; };
 		F7D6F04725037514008CA5A6 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D6F04625037514008CA5A6 /* Item.swift */; };
 		F7D6F04825037514008CA5A6 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D6F04625037514008CA5A6 /* Item.swift */; };
 		F7D6F04A25037752008CA5A6 /* Items.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7D6F04925037752008CA5A6 /* Items.xcassets */; };
@@ -22,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F79F2B602503F76800E8090D /* ItemStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemStore.swift; sourceTree = "<group>"; };
 		F7D6F04625037514008CA5A6 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		F7D6F04925037752008CA5A6 /* Items.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Items.xcassets; sourceTree = "<group>"; };
 		F7D6F04C2503809F008CA5A6 /* ItemDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetail.swift; sourceTree = "<group>"; };
@@ -70,6 +73,7 @@
 				F7F313B02503707500704BA5 /* ContentView.swift */,
 				F7D6F04C2503809F008CA5A6 /* ItemDetail.swift */,
 				F7D6F04625037514008CA5A6 /* Item.swift */,
+				F79F2B602503F76800E8090D /* ItemStore.swift */,
 				F7D6F04925037752008CA5A6 /* Items.xcassets */,
 				F7F313B12503707500704BA5 /* Assets.xcassets */,
 			);
@@ -204,6 +208,7 @@
 				F7F313C42503707500704BA5 /* ContentView.swift in Sources */,
 				F7D6F04D2503809F008CA5A6 /* ItemDetail.swift in Sources */,
 				F7D6F04725037514008CA5A6 /* Item.swift in Sources */,
+				F79F2B612503F76800E8090D /* ItemStore.swift in Sources */,
 				F7F313C22503707500704BA5 /* MyFirstSwiftUIAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,6 +220,7 @@
 				F7F313C52503707500704BA5 /* ContentView.swift in Sources */,
 				F7D6F04E2503809F008CA5A6 /* ItemDetail.swift in Sources */,
 				F7D6F04825037514008CA5A6 /* Item.swift in Sources */,
+				F79F2B622503F76800E8090D /* ItemStore.swift in Sources */,
 				F7F313C32503707500704BA5 /* MyFirstSwiftUIAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
